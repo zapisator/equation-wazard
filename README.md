@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Equation Wizard
 
-## Getting Started
+**Equation Wizard** - это веб-приложение,
+которое позволяет решать квадратные уравнения
+и строить их графики.
 
-First, run the development server:
+## Функциональность
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*  Ввод коэффициентов квадратного уравнения.
+*  Решение уравнения и отображение корней.
+*  Построение графика уравнения.
+*  Отображение точек, соответствующих корням уравнения,
+   на графике.
+*  Отображение точки, соответствующей заданному значению y,
+   на графике.
+*  Динамическое изменение масштаба графика
+   для отображения всех точек.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Технологии
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*  Next.js 13+
+*  React
+*  TypeScript
+*  Recharts (для построения графиков)
+*  Material-UI (для компонентов UI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Запуск проекта
 
-## Learn More
+1.  Клонируйте репозиторий:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    git clone git@github.com:zapisator/equation-wazard.git
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  Перейдите в папку проекта:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    cd equation-wazard
+    ```
 
-## Deploy on Vercel
+3.  Установите зависимости:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.  Запустите приложение в режиме разработки:
+
+    ```bash
+    npm run dev
+    ```
+
+5.  Откройте приложение в браузере по адресу `http://localhost:3000`.
+
+## Использование
+
+1.  Введите коэффициенты квадратного уравнения
+    в соответствующие поля.
+2.  Нажмите кнопку "Рассчитать".
+3.  Приложение отобразит корни уравнения
+    и построит его график.
+4.  Введите значение `y` в поле "y"
+    и нажмите кнопку "Нарисовать график",
+    чтобы отобразить точку, соответствующую
+    этому значению, на графике.
+
+##  Авторы
+
+*  [Ваше имя]
+
+##  Лицензия
+
+[Укажите лицензию, например, MIT]
+
+## Скриншот
+
+[Добавьте скриншот приложения]
+
+
+
+
