@@ -48,15 +48,14 @@ export default function InputForm() {
     if (result.x) {
       minX = Math.min(minX, parseFloat(result.x.split('=')[1]));
       maxX = Math.max(maxX, parseFloat(result.x.split('=')[1]));
+    } else {
+      minX = Math.min(parseFloat(result.x1.split('=')[1]), parseFloat(result.x2.split('=')[1]));
+      maxX = Math.max(parseFloat(result.x1.split('=')[1]), parseFloat(result.x2.split('=')[1]));
     }
-    if (result.x1) {
-      minX = Math.min(minX, parseFloat(result.x1.split('=')[1]));
-      maxX = Math.max(maxX, parseFloat(result.x1.split('=')[1]));
-    }
-    if (result.x2) {
-      minX = Math.min(minX, parseFloat(result.x2.split('=')[1]));
-      maxX = Math.max(maxX, parseFloat(result.x2.split('=')[1]));
-    }
+
+    let distance = maxX - minX;
+    minX -= distance / 2;
+    maxX += distance / 2;
 
     const step = 0.1;
 
