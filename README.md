@@ -94,4 +94,4 @@ SOFTWARE.
 
 ## Скриншот
 
-[screenshot.png](screenshot.png)
+![Описание изображения](screenshot.png)
