@@ -9,14 +9,13 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceDot,
-  ReferenceArea,
 } from 'recharts';
 import { GraphDataPoint } from '../utils/interfaces';
 
 interface GraphProps {
   data: GraphDataPoint[];
   roots: number[];
-  yValue: number | null;
+  yValue: number;
 }
 
 const Graph: React.FC<GraphProps> = ({ data, roots, yValue }) => {
@@ -43,7 +42,7 @@ const Graph: React.FC<GraphProps> = ({ data, roots, yValue }) => {
       <CartesianGrid stroke="#f5f5f5" />
       <Line type="monotone" dataKey="y" stroke="#ff7300" dot={false} />
       <Tooltip
-        formatter={(value) => `${value.toFixed(2)}`}
+        formatter={(value: number) => value.toFixed(2)} 
         labelFormatter={(label) => `x: ${label.toFixed(2)}`}
       />
 

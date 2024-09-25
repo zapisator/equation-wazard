@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import InputForm from './components/InputForm';
+import InputForm from './components/App';
 
 export default function Home() {
   return (
